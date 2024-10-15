@@ -21,4 +21,4 @@ modules:
     sources:
     - type: archive
       url: 'http://www.ferdiferdi.com/jj/JJ_LIN.zip'
-      sha256: '294011b56a4f707d22043290f2d6ba6895f992268e80984b7c647026bb650085'
+      sha256: 'bb4829e0a2bb1a2c97dbbaac98ea165c8aa504b1812358b5ab3685e18af887bc'
