@@ -1,8 +1,8 @@
 id: io.itch.domestique_baston.java_jolt
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '24.08'
 base: org.godotengine.godot.BaseApp
-base-version: '4.3'
+base-version: '4.3-24.08'
 sdk: org.freedesktop.Sdk
 command: godot-runner
 finish-args:
@@ -14,11 +14,20 @@ modules:
   - name: java_jolt
     buildsystem: simple
     build-commands:
-      - install -D -m 0644 JJ.pck /app/bin/godot-runner.pck
-      - install -D -m 0644 io.itch.domestique_baston.java_jolt.metainfo.xml /app/share/metainfo/$FLATPAK_ID.metainfo.xml
-      - install -D -m 0644 io.itch.domestique_baston.java_jolt.desktop /app/share/applications/$FLATPAK_ID.desktop
+      - install -D -m 0644 jj.pck /app/bin/godot-runner.pck
+      - install -D -m 0644 $FLATPAK_ID.metainfo.xml /app/share/metainfo/$FLATPAK_ID.metainfo.xml
+      - install -D -m 0644 $FLATPAK_ID.desktop /app/share/applications/$FLATPAK_ID.desktop
       - install -D -m 0644 JJ.png /app/share/icons/hicolor/256x256/apps/$FLATPAK_ID.png
     sources:
-    - type: archive
-      url: 'http://www.ferdiferdi.com/jj/JJ_LIN.zip'
-      sha256: 'bb4829e0a2bb1a2c97dbbaac98ea165c8aa504b1812358b5ab3685e18af887bc'
+    - type: file
+      url: 'https://github.com/DomestiqueBaston/JAVA_JOLT/releases/download/v1.0.1/jj.pck'
+      sha256: '40aa0657b682e6fe10b2de4f6d684d3734f15b12cfce38fefd1751fac93a131c'
+    - type: file
+      url: 'https://github.com/DomestiqueBaston/JAVA_JOLT/raw/refs/tags/v1.0.1/io.itch.domestique_baston.java_jolt.desktop'
+      sha256: '2568bc1030059832788a84fc372cce305f289de1cc6c6f9f21df63e8e13a67c9'
+    - type: file
+      url: 'https://github.com/DomestiqueBaston/JAVA_JOLT/raw/refs/tags/v1.0.1/io.itch.domestique_baston.java_jolt.metainfo.xml'
+      sha256: '0e4428d5ad2637c7cc7054b5fdbd3156b23b0efe2c882d12925f1e637f92e523'
+    - type: file
+      url: 'https://github.com/DomestiqueBaston/JAVA_JOLT/raw/refs/tags/v1.0.1/JJ.png'
+      sha256: 'fdfb606fdc515d8161364d50bf7cabd62faa88186a02cea73f02023ac03e9d04'
