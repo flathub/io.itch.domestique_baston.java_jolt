@@ -27,7 +27,7 @@ modules:
       sha256: '2568bc1030059832788a84fc372cce305f289de1cc6c6f9f21df63e8e13a67c9'
     - type: file
       url: 'https://github.com/DomestiqueBaston/JAVA_JOLT/raw/refs/tags/v1.0.1/io.itch.domestique_baston.java_jolt.metainfo.xml'
-      sha256: '944d0d21a5b864ff1237a5aeb18c8b700aa56df48597c6cfed63441fb65857ce'
+      sha256: '0e4428d5ad2637c7cc7054b5fdbd3156b23b0efe2c882d12925f1e637f92e523'
     - type: file
       url: 'https://github.com/DomestiqueBaston/JAVA_JOLT/raw/refs/tags/v1.0.1/JJ.png'
       sha256: 'fdfb606fdc515d8161364d50bf7cabd62faa88186a02cea73f02023ac03e9d04'
